@@ -1,0 +1,19 @@
+/* Universal Styles */
+* {
+  font-family: 'Bitter', serif;
+  box-sizing: border-box;
+  line-height: 1.25rem;
+}
+
+/* Element Selectors */
+form {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+/* Class Selectors */
+.container {
+  min-height: 100vh;
+  margin: auto;
+}
