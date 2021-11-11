@@ -12,6 +12,12 @@ form {
   margin: auto;
 }
 
+fieldset {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
 /* Class Selectors */
 .container {
   min-height: 100vh;
