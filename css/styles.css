@@ -6,8 +6,21 @@
 }
 
 /* Element Selectors */
+body {
+  margin: 0;
+}
+
 header {
-  margin: auto;
+  text-align: center;
+}
+
+h2 {
+  margin: 0 0 20px;
+}
+
+p, label {
+  color: grey;
+  margin: 5px 0px;
 }
 
 form {
@@ -22,6 +35,22 @@ fieldset {
   border: none;
 }
 
+input,
+select {
+  height: 40px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+  background: #EEEEEE;
+}
+
+input:focus,
+select:focus {
+  border: solid 2px midnightblue;
+  border-radius: 5px;
+  outline: none;
+}
+
 button {
   padding: 20px;
 }
@@ -32,23 +61,88 @@ button {
   margin: auto;
 }
 
+.header-info {
+  margin: 30px auto;
+}
+
+.header-break {
+  border: none;
+  border-bottom: 3px solid black;
+  width: 90%;
+  margin-bottom: 4px;
+}
+
+.header-break2 {
+  border: none;
+  border-top: 2px solid black;
+  width: 90%;
+  margin-top: 0;
+}
+
+.news-break {
+  border: none;
+  border-top: 2px solid black;
+  width: 90%;
+}
+
 .newsletter {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+}
+
+.newsletter_format {
+  margin-top: 20px;
+}
+
+.newsletter_label {
+  margin-top: 20px;
 }
 
 /* Id Selectors */
+#page-title {
+  color: white;
+  background: #3A4058;
+  padding: 30px 20px;
+}
+
+#zip {
+  width: 50%;
+}
+
+#other_topics {
+  border: none;
+  border-radius: 5px;
+  background-color: #EEE;
+  height: 90px;
+}
+
 #submit {
   color: white;
   font-size: 1.5em;
   border: none;
   border-radius: 5px;
   background: #27c29e;
+  margin: 20px auto;
+  width: 90%;
 }
 
-/* Type Selectors */
+/* Combinator Selectors */
 button + p {
   text-align: center;
   color: grey;
   font-style: italic;
   font-weight: lighter;
+}
+
+/* Type Selectors */
+[name="news"],
+[type="radio"] {
+  height: 20px;
+  margin: 5px 10px 5px 0px;
+}
+
+[placeholder] {
+  text-align: right;
+  font-style: italic;
+  padding: 10px;
 }
