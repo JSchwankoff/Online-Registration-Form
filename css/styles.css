@@ -29,6 +29,12 @@ form {
   margin: auto;
 }
 
+legend {
+  font-weight: bold;
+  font-size: 18px;
+  padding: 20px 0;
+}
+
 fieldset {
   display: flex;
   flex-direction: column;
@@ -170,6 +176,30 @@ button + p {
     font-size: 14px;
   }
 
+  .contact-info {
+    flex-direction: row;
+    flex-basis: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .contact-info input,
+  select {
+    width: 70%;
+    margin: 10px 0;
+  }
+
+  .contact-info label {
+    width: 30%;
+    margin: 10px 0;
+  }
+
+  #zip {
+    width: 20%;
+    margin-right: auto;
+  }
+
   #submit {
     width: 100%;
   }
@@ -179,4 +209,11 @@ button + p {
     margin: 0;
   }
 
+  .contact-head {
+    width: 100%;
+  }
+
+  button + p {
+    margin: 25px;
+  }
 }
