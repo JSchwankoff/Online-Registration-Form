@@ -55,12 +55,20 @@ select:focus {
   border: solid 2px midnightblue;
   border-radius: 5px;
   outline: none;
+  background: #CFD8FA;
+  transition: .75s;
 }
 
 ::-webkit-input-placeholder {
   text-align: right;
   padding-right: 15px;
   font-style: italic;
+}
+
+textarea::-webkit-input-placeholder {
+  text-align: left;
+  padding: 5px 0 0 15px;
+  font-style: normal;
 }
 
 button {
@@ -100,10 +108,28 @@ button {
 .newsletter {
   display: flex;
   flex-direction: column;
+  background: #C8CDE2;
+  border: 2px solid #BEC4DB;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.newsletter p,
+.newsletter label {
+  color: #5C5D61;
 }
 
 .newsletter_format {
   margin-top: 20px;
+}
+
+.news-title {
+  width: 130px;
+  border: 3px solid #BEC4DB;
+  background: #C8CDE2;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: left;
 }
 
 .newsletter_label {
@@ -133,7 +159,7 @@ button {
   font-size: 1.5em;
   border: none;
   border-radius: 5px;
-  background: #27c29e;
+  background: #697BC5;
   margin: 20px auto;
   width: 90%;
 }
@@ -157,14 +183,14 @@ button + p {
 @media screen and (min-width: 768px) {
   form,
   .header-info {
-    width: 60%;
+    width: 55%;
     margin: 0 auto;
   }
 
   .header-break,
   .header-break2,
   .news-break {
-    width: 60vw;
+    width: 55vw;
   }
 
   .header-info {
