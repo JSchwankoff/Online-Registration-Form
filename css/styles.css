@@ -51,7 +51,8 @@ select {
 }
 
 input:focus,
-select:focus {
+select:focus,
+textarea:focus {
   border: solid 2px midnightblue;
   border-radius: 5px;
   outline: none;
