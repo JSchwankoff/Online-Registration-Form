@@ -51,8 +51,7 @@ select {
 }
 
 input:focus,
-select:focus,
-textarea:focus {
+select:focus {
   border: solid 2px midnightblue;
   border-radius: 5px;
   outline: none;
@@ -153,6 +152,14 @@ button {
   border-radius: 5px;
   background-color: #EEE;
   height: 90px;
+}
+
+#other_topics:focus {
+  border: solid 2px midnightblue;
+  border-radius: 5px;
+  outline: none;
+  background: #CFD8FA;
+  transition: .75s;
 }
 
 #submit {
